@@ -5,7 +5,7 @@ void setup()
 	//your code here
 	size(500, 500);
 	background(0);
-	uwu = new Particle[500];
+	uwu = new Particle[750];
 	for (int i=0; i<uwu.length; i++) {
 		uwu[i] = new Particle();
 	}
@@ -45,8 +45,16 @@ class Particle
 	public void move() {
 		myX = myX + Math.cos(myA) * myS;
 		myY = myY + Math.sin(myA) * myS;
-		if(abs((float)myX-250)>75 && abs((float)myY-250)>75)
-			mySize+=0.01;
+		if(abs((float)myX-250)>75 || abs((float)myY-250)>75){
+			
+		
+			myS-=0.01;
+		}
+		
+		if (abs((float)myX-250)<75 || abs((float)myY-250)<75){
+		
+			myS+=0.005;
+		}
 	}
 }
 
