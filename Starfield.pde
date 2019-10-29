@@ -90,5 +90,3 @@ class OddballParticle extends Particle//inherits from Particle
 		}
 	}
 }
-
-
