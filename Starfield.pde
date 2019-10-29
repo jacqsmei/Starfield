@@ -4,7 +4,7 @@ Particle [] uwu;
 void setup()
 {
 	//your code here
-	astronaut = loadImage("astronaut-helmet-icon.png");
+	astronaut = loadImage("data/astronaut-helmet-icon.png");
 	size(500, 500);
 	background(0);
 	uwu = new Particle[750];
