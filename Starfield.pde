@@ -79,14 +79,14 @@ class OddballParticle extends Particle//inherits from Particle
 		myY = myY + Math.sin(myA) * myS;
 		if(abs((float)myX-250)>75 || abs((float)myY-250)>75) {
 			myS-=0.01;
-			mySize+=0.2;
+			mySize+=0.01;
 		}
 		if (abs((float)myX-250)<75 || abs((float)myY-250)<75) {
 			myS+=0.005;
-			mySize-=0.2;
+			mySize-=0.01;
 		}
 		while (mySize>50) {
-			mySize-=0.2;
+			mySize-=0.01;
 		}
 	}
 }
