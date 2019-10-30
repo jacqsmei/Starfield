@@ -86,7 +86,7 @@ class OddballParticle extends Particle//inherits from Particle
 			mySize-=0.2;
 		}
 		while (mySize>50) {
-			mySize-=0.05;
+			mySize-=0.02;
 		}
 	}
 }
